@@ -7,14 +7,16 @@ public class tabuada {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int n,result;
+		int result;
 		
-		System.out.println("Manda o número que vc quer saber a tabuada(que vai de 0 à 9)");
-		n=sc.nextInt();
+		System.out.println("Tabuada do 0 ao 9:");
 		
 		for(int i = 0;i<10;i++) {
-			result = n*i;
-			System.out.println(n + " x "+ i + " = "+result);
+			for(int j=0;j<=10;j++) {
+				result=j*i;
+				System.out.println(i + " x "+ j + " = "+result);
+			}
+			System.out.println("");
 		}
 
 		sc.close();
